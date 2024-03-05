@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 header{
     width: 100%;
@@ -14,7 +15,6 @@ header{
     max-width:864px;
     min-height: 25px;
     margin: 0 auto;
-    padding: 20px; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,6 +33,7 @@ header{
 .nav{
     width: 100%;
     max-width: 267px; 
+    min-height: 25px;
     display: flex;
     flex-wrap: wrap; 
 }
@@ -63,10 +64,13 @@ header{
     flex-wrap: wrap;
 }
 .main-content{
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    
 }
 .main-title{
     width: 100%;
@@ -81,20 +85,23 @@ header{
     font-family: "Source Sans 3", sans-serif;
     font-size: 22px;
     line-height: 33px;
+    padding: 20px;
     text-align: center;
 }
 .main-img{
-    padding-left: 20px;
-    padding-right: 20px;
+    
     width: 100%;
+    display: flex;
+    justify-content: center;
     
 }
 @media screen and (max-width:800px){
     .header-main{
+        width: 100%;
         max-width: 617px;
     }
     .main-content{
-        max-width: 617px;
+        width: 100%;
     }
     .main-title{
         font-size: 72px;
@@ -107,16 +114,22 @@ header{
         max-width: 256px;
     }
     .main-content{
-        max-width: 256px;
+        width: 256px;
     }
     .main-title{
         font-size: 36px;
-        max-width: 182px;
+        width: 182px;
         min-height: 40px;
     }
     .main-text{
         font-size: 12px;
-        max-width: 217px;
+        width: 217px;
         min-height: 49px;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-li{
+        list-style-type: circle;
     }
 }
