@@ -1,16 +1,6 @@
 body{
     margin: 0 auto;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
-/*
-.header{
-    width: 100%;
-    margin: 0 auto;
-} 
-*/
 .header-main{
     width: 100%;
     max-width:864px;
@@ -39,10 +29,7 @@ body{
 }
 .list{
     width: 100%;
-   /* display: flex; 
-    justify-content: space-between; */
-    list-style-type: none;
-    
+    list-style-type: none;   
 }
 .nav a{
     float: left;
