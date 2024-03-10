@@ -12,43 +12,27 @@
     <title>Responsive Adaptive Design</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header-main">
             <h2 class="logo">Head.</h2>
             <nav class="nav" id="nav-re">
-               <!-- <a href="#" class="toggle-button">
-                    <span class="bar"><i class="fa-solid fa-circle"></i></span>
-                    <span class="bar"><i class="fa-solid fa-circle"></i></span>
-                    <span class="bar"><i class="fa-solid fa-circle"></i></span>
-                </a>  -->
-                <ul class="nav-list">
-                    <li class="nav-li"><a class="nav-link" href="#">Works</a></li>
-                    <li class="nav-li"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-li"><a class="nav-link" href="#">Contacts</a></li>
-                    <div class="dropdown">
+                <ul class="list"> 
+                    <li class="li"><a href="#">Works</a></li>
+                    <li class="li"><a href="#">Services</a></li>
+                    <li class="li"><a href="#">Contacts</a></li>
+                    <li class="dropdown">
                         <button class="drop-btn">Products
-                        <i class="fa-solid fa-sort-down"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </button>
                         <div class="drop-content">
                             <a href="#">Hats</a>
                             <a href="#">Coats</a>
                             <a href="#">Pants</a>
                         </div>
-                    </div>
+                    </li>
+                <a class="icon" onclick="dropNav()"><i class="fa-solid fa-bars"></i></a>   
                 </ul>
-                <a class="icon" onclick="dropNav()"></a>
             </nav>
-
-            <script>
-                function dropNav(){
-                    let drop= document.getElementById("nav-re");
-                    if (drop.className === "nav"){
-                        drop.className += "responsive";
-                    } else {
-                        drop.className= "nav";
-                    }
-                }
-            </script>
         </div>
     </header>
     <main>
@@ -66,6 +50,17 @@
                 </picture>
             </div>
         </div>
+
+        <script>
+        function dropNav() {
+                let drop = document.getElementById("nav-re");
+                 if (drop.className === "nav") {
+                    drop.className += " responsive";
+                } else {
+                    drop.className = "nav";
+                }
+      }
+        </script>
     </main>
 </body>
 </html>
